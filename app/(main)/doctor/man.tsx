@@ -89,7 +89,7 @@ const Man = () => {
             <div className="text-[rgba(51,53,72,0.71)] text-base font-medium">2016-present</div>
            </div>
            </div>
-           <div className="w-full  rounded-2xl border lg:h-[524px] h-[600px]">
+           <div className="w-full  rounded-2xl border h-[524px] md:h-[530px]">
             <div className="flex  h-16 items-center px-5  rounded-t-2xl  bg-[#F4F7EC] w-full gap-3">
                 <div className="text-[#313131] font-semibold text-2xl">Featured Reviews</div>
                 <div className="text-[#313131] font-semibold text-2xl"> (102)</div>
@@ -112,7 +112,7 @@ const Man = () => {
                 </div>
                 
             </div>
-            <div className="flex flex-col m-6 rounded-2xl border pt-10 px-9 pb-6">
+            <div className="flex flex-col m-6 rounded-2xl border pt-5 px-9 pb-6">
                 <div>
                     <div className="flex gap-2 w-60 h-[65px]">
                    
@@ -161,7 +161,7 @@ const Man = () => {
                 <div className="lg:w-1/2 font-medium text-xl ml-7 flex items-center justify-center"><span>Select your mode of session</span></div>
                 <div className="lg:flex hidden items-center justify-center w-1/3 "><div className="  border w-full px-2"></div></div>
            
-                <div> <Calendar/></div>
+                <div> <Calendar className="mr-4"/></div>
             </div >
             <div className="flex items-center justify-between my-10 mx-10">
                 <div><CircleChevronLeft/></div>

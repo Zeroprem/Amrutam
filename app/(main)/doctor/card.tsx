@@ -6,7 +6,7 @@ const Card = () => {
     <section
   >
    
-<div className=" pt-44 w-full bg-gray-50 flex items-center">
+<div className=" pt-32 w-full bg-gray-50 flex items-center">
       <div className="h-56 w-72 absolute flex lg:justify-start justify-center pl-10  lg:items-center">
         <Image
 
@@ -42,8 +42,11 @@ const Card = () => {
                 <div className='flex flex-col lg:pl-32'>
                     <div className='flex'> <span className='font-bold text-xl text-[#212529]'>Dr. Bruce Willis</span><CheckCircle2  className='text-blue-700'/></div>
                     <span className='text-[#3A643B] text-sm font-medium'>Gynecologist</span>
-                    <div className='flex'>
-                    <span className='text-[#626262] text-sm font-semibold items-center flex'>4.2</span><Star fill= 'orange'  className='text-orange-300 text-sm'/>
+                    <div className='flex items-center gap-1'>
+                    <span className='text-[#626262] text-sm font-semibold items-center flex'>4.2</span><span className='flex items-center'><Star fill= '#F79624'  className='text-orange-300 text-sm h-4 w-4'/>
+                    <Star fill= '#F79624'  className='text-orange-300 text-sm h-4 w-4'/>
+                    <Star fill= '#F79624'  className='text-orange-300 text-sm h-4 w-4'/>
+                    <Star fill= '#F79624'  className='text-orange-300 text-sm h-4 w-4'/></span>
                     </div>
                     
                 </div>

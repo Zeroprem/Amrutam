@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Nav = () => {
     return (
-     <header className="padding-x py-8 fixed z-10 w-full bg-[#FFF7E2]  ">
+     <header className="padding-x py-8 fixed z-10 w-full h-24 bg-[#FFF7E2]  ">
       <nav className="flex  justify-between items-center max-container">
           <a href="/">
               <Image src="/logo.png" alt="logo" width={259} height={49} />
