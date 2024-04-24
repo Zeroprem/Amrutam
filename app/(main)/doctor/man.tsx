@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
   Calendar,
   CheckCircle2,
@@ -14,8 +16,9 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import Carousel from "@/components/Carousel";
 
+
 const Man = () => {
-    
+  const notify = () => toast("successfully appointed!");
   // we can store objects i made it in percpective of ui for full stack we can pass props and dyanamic values from database
   const [selectedDiv, setSelectedDiv] = useState<number | null>(null);
 
@@ -86,10 +89,10 @@ const Man = () => {
               English
             </div>
             <div className="bg-[rgba(46,55,164,0.04)] w-[105px] h-10 flex items-center justify-center rounded-2xl text-base font-medium">
-              English
+              Hindi
             </div>
             <div className="bg-[rgba(46,55,164,0.04)] w-[105px] h-10 flex items-center justify-center rounded-2xl text-base font-medium">
-              English
+              Telugu
             </div>
           </div>
           <div className="flex gap-1 px-10  ">
@@ -107,15 +110,15 @@ const Man = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex flex-col gap-16 h-64 rounded-2xl  border ">
-          <div className="flex h-[61px] items-center px-5  rounded-t-2xl  bg-[#F4F7EC] w-full">
+        <div className="w-full flex flex-col gap-6 h-64 rounded-2xl  border ">
+          <div className="flex h-[61px] items-center pl-10  rounded-t-2xl  bg-[#F4F7EC] w-full">
             <div className="text-[#313131] font-semibold text-2xl">
               I Specialize In
             </div>
           </div>
-          <div className="flex mx-4 w-[455px] h-10 gap-3 ">
+          <div className="flex mx-4 w-[455px]  gap-3 ">
             <div className="flex-col gap-2 flex items-center justify-center ">
-              {" "}
+             
               <div className="h-24  w-[100px] rounded-lg flex items-center justify-center bg-[#FFFCF2] border-[#EAEAEA] border">
                 <Image src="/women.svg" alt="skin" width={65} height={64} />
               </div>
@@ -157,19 +160,16 @@ const Man = () => {
               Skin Treatment
             </div>
             <div className="bg-[#F7F7FC] text-[#3A643B] w-[140px] h-11 flex items-center justify-center rounded-2xl text-base font-medium">
-              Skin Treatment
+            Pregnancy            </div>
+            <div className="bg-[#F7F7FC] text-[#3A643B] w-[140px] h-11 flex items-center justify-center rounded-2xl text-base font-medium">
+            Skin Treatment
             </div>
             <div className="bg-[#F7F7FC] text-[#3A643B] w-[140px] h-11 flex items-center justify-center rounded-2xl text-base font-medium">
-              Skin Treatment
-            </div>
+            Endometriosis            </div>
             <div className="bg-[#F7F7FC] text-[#3A643B] w-[140px] h-11 flex items-center justify-center rounded-2xl text-base font-medium">
-              Skin Treatment
-            </div>
+            Pelvic Pain            </div>
             <div className="bg-[#F7F7FC] text-[#3A643B] w-[140px] h-11 flex items-center justify-center rounded-2xl text-base font-medium">
-              Skin Treatment
-            </div>
-            <div className="bg-[#F7F7FC] text-[#3A643B] w-[140px] h-11 flex items-center justify-center rounded-2xl text-base font-medium">
-              Skin Treatment
+            Ovarian Cysts
             </div>
           </div>
         </div>
@@ -564,9 +564,11 @@ const Man = () => {
               </div>
           </div>
           <div className="  flex w-full justify-around items-center  my-10">
-            <button className="text-white rounded-lg px-32 py-3 w-[476.37px]   h-[59.73px]text-white font-medium text-xl bg-[#3A643B]">
+            <button onClick={notify} className="text-white rounded-lg px-32 py-3 w-[476.37px]   h-[59.73px]text-white font-medium text-xl bg-[#3A643B]">
               Make An Appointment
             </button>
+            <ToastContainer />
+
           </div>
         </div>
       </div>
